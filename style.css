@@ -3,6 +3,9 @@
     /* background-color: tomato; */
     font-size: 125%;
     font-family: Arial, Helvetica, sans-serif;
+    --color-bg: black;
+    --color-fg: white;
+   
 }
 
 @media (width > 600px){
@@ -18,9 +21,13 @@ body{
 
 h1{
     font-size: 2rem;
-    
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    padding: 1rem;
     @media (width > 800px) {
         font-size: 6rem;
+        line-height: 90%;
+        padding: 2rem;
     }
 }
 
