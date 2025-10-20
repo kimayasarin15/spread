@@ -5,17 +5,57 @@
     --spacing: 1rem;
     background-color: #0d0d0d;
     color: white;
-    font-size: 125%;
-    font-family: Arial, Helvetica, sans-serif;
-    --color-bg: black;
-    --color-fg: white;
-   
+    font-size: 115%;
+    font-family: "Noto Sans", sans-serif;
 }
 
-@media (width > 600px){
-    :root {
-        font-size: 150%;
+h1{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    @media (width > 500px) {
+        font-size: 2rem;
+        padding: 2rem;
     }
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding-block-start: 5%;
+    padding-block-end: 10%;
+    text-align: center;
+}
+
+ol {
+  text-align: center;
+  padding-block-end: 10%;
+  
+}
+
+li {
+    display: inline;
+    padding: 3%;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.blue {
+    background-color: #0171e3;
+    padding-inline: 6%;
+    padding-block: 2%;
+    /* from the class website; border radius*/
+    border-radius: 1rem;
+
+}
+
+.stroke {
+    color: #0171e3;
+    border-color: #0171e3;
+    border-style: solid;
+    padding-inline: 6%;
+    padding-block: 2%;
+    border-width: 0.1rem;
+    border-radius: 1rem;
 }
 
 body{
@@ -23,19 +63,17 @@ body{
 }
 
 
-h1{
-    font-size: 2rem;
-    background-color: var(--color-bg);
-    color: var(--color-fg);
-    padding: 1rem;
-    @media (width > 800px) {
-        font-size: 6rem;
-        line-height: 90%;
-        padding: 2rem;
-    }
-}
 
 
 p{
     margin-block-start: 2calc(2 * var(--spacing));
+
 }
+
+
+@media (width > 375px){
+    :root {
+        font-size: 150%;
+    }
+}
+
