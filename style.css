@@ -18,7 +18,7 @@
 h1{
     font-size: 1.5rem;
     padding-inline: 1rem;
-    padding-block-start: 8rem;
+    padding-block-start: 4rem;
     text-align: center;
     font-weight: 500;
     @media (width > 500px) {
@@ -37,7 +37,6 @@ h2 {
 
 .names {
     font-size: 2rem;
-    font-weight: 200;
     font-family: "Old Standard TT", serif;
     font-weight: 700;
     font-style: normal;
@@ -48,7 +47,8 @@ h2 {
     color: black;
     line-height: 90%;
     margin-inline-end: 1rem;
-    margin-block-start: 3rem;
+    margin-block-end: 2rem;
+    margin-block-start: 0.5rem;
 }
 
 
@@ -61,6 +61,28 @@ ol {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+
+}
+
+/* work on nesting */
+.buttons{
+  margin-block-end: 3rem;
+  .blue {
+      background-color: #0171e3;
+  
+      padding-block: 3%;
+      /* from the class website; border radius*/
+      border-radius: 1.2rem;
+  }
+  
+  .stroke {
+      color: #0171e3;
+      border-color: #0171e3;
+      border-style: solid;
+      padding-block: 3%;
+      border-width: 0.1rem;
+      border-radius: 1.2rem;
+  }
 }
 
 li {
@@ -69,23 +91,6 @@ li {
     font-weight: 200;
     font-size: 0.8rem;
     width: 6rem;
-}
-
-.blue {
-    background-color: #0171e3;
-    padding-block: 3%;
-    /* from the class website; border radius*/
-    border-radius: 1.2rem;
-    
-}
-
-.stroke {
-    color: #0171e3;
-    border-color: #0171e3;
-    border-style: solid;
-    padding-block: 3%;
-    border-width: 0.1rem;
-    border-radius: 1.2rem;
 }
 
 
@@ -114,7 +119,6 @@ li {
 .apple {
     background-color: #282828;
     border-radius: .3rem;
-    padding: 5%;
     margin: 5%;
     font-weight: 300;
 }
@@ -128,8 +132,50 @@ p{
     /* padding-block: 8%; */
     line-height: 150%;
     font-size: 0.9rem;
-
+    padding: 5%;
 }
+
+
+
+.part2 {
+    background-color: #FFFAE3;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    background-color: #FFFAE3;
+    text-align: left;
+    color: black;
+    margin-inline-end: 1rem;
+    line-height: 150%;
+    padding-inline-start: 1rem;
+
+    
+    .bigletter {
+        line-height: 90%;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 3rem;
+        padding-inline-start: 1rem;
+        padding-block-start: 3rem;
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+/* BLOCK QUOTES */
+
+
+
+
 
 
 
