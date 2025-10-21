@@ -16,8 +16,10 @@
 /* HEADER */
 h1{
     font-size: 1.5rem;
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block-start: 4rem;
     text-align: center;
+    font-weight: 500;
     @media (width > 500px) {
         font-size: 2rem;
         padding: 2rem;
@@ -26,18 +28,23 @@ h1{
 
 h2 {
     font-size: 1.2rem;
-    padding-block-start: 5%;
-    padding-block-end: 10%;
+    font-weight: 200;
+    padding-block-start: 3%;
+    padding-block-end: 3%;
     text-align: center;
 }
 
-
+.names {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
 
 
 /* APPLE STYLE BUTTONS (BLUE) AND (STROKE) */
 ol {
   text-align: center;
-  padding-block: 15%;
+  padding-block-start: 5%;
+  padding-block-end: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -47,26 +54,25 @@ li {
     /* block-size: 2rem; */
     /* padding: 3%; */
     font-weight: 200;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 6rem;
 }
 
 .blue {
     background-color: #0171e3;
-    padding-inline: 6%;
     padding-block: 3%;
     /* from the class website; border radius*/
-    border-radius: 1rem;
+    border-radius: 1.2rem;
+    
 }
 
 .stroke {
     color: #0171e3;
     border-color: #0171e3;
     border-style: solid;
-    padding-inline: 6%;
-    padding-block: 2%;
+    padding-block: 3%;
     border-width: 0.1rem;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
 }
 
 
@@ -78,7 +84,11 @@ li {
     background-color: #181818;
     opacity: 50%;
     padding-block: 5%;
-    /* need to add extra class for the article link to make sticky */
+    position: sticky;
+    top: 0;
+    /* from MDN - blur */
+    backdrop-filter: blur(10px);
+    
 }
 
 
@@ -91,8 +101,8 @@ li {
 .apple {
     background-color: #282828;
     border-radius: .3rem;
-    padding: 7%;
-    margin: 7%;
+    padding: 5%;
+    margin: 5%;
     font-weight: 300;
 }
 
@@ -102,7 +112,9 @@ em {
 
 p{
     /* margin-block-start: 2calc(2 * var(--spacing)); */
-    padding-block: 10%;
+    /* padding-block: 8%; */
+    line-height: 150%;
+    font-size: 0.9rem;
 
 }
 
