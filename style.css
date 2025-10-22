@@ -96,6 +96,10 @@ h2 {
      @media (width > 1270px) {
         font-size: 3.4rem;
         padding-inline-end: 15rem;
+        padding-inline-start: 3.8rem;
+        padding-block-start: 3%;
+        padding-block-end: 2%;
+        margin-inline-end: 3.75rem;
     }
 
 }
@@ -206,6 +210,12 @@ li {
     border-radius: .3rem;
     margin: 5%;
     font-weight: 300;
+
+     @media (width > 1270px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 em {
@@ -220,8 +230,7 @@ p{
     padding: 5%;
      @media (width > 675px) {
         font-size: 1rem;
-        
-    }
+        }
 }
 
 
@@ -239,6 +248,15 @@ p{
     line-height: 150%;
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
+    @media (width > 1270px) {
+        margin-inline-end: 3.75rem;
+      p{
+        /* display: flex; */
+        font-size: 1.4rem;
+        padding-inline: 3.8rem;
+
+      }      
+    } 
 
     
     .bigletter {
@@ -249,21 +267,20 @@ p{
         padding-inline-start: 1rem;
         padding-block-start: 3rem;
          @media (width > 500px) {
-        font-size: 2.8rem;
+        font-size: 2.8rem;}
          @media (width > 625px) {
-        font-size: 3.2rem;
-        
-    }
-        
-    }
-        
-
-    }
-
+        font-size: 3.2rem;} 
+        @media (width > 1270px) {
+        font-size: 4.2rem;  
+        padding-inline-start: 3.8rem;          
+        } 
+    }  
     em {
-        color: #FF2424;
-    }
-}
+        color: #FF2424;}
+
+
+} 
+
 
 
 
@@ -297,6 +314,14 @@ p{
     }
         
     }
+    @media (width > 1270px) {
+        margin-inline-end: 3.75rem;
+        font-size: 3rem;
+        padding-inline: 3.8rem;
+        padding-block: 2rem;
+
+           
+    } 
 
 }
 
