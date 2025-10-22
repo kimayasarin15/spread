@@ -16,7 +16,7 @@
 
 /* HEADER */
 h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-inline: 1rem;
     padding-block-start: 4rem;
     text-align: center;
@@ -28,15 +28,16 @@ h1{
 }
 
 h2 {
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding-block-start: 3%;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-block-start: 1%;
     padding-block-end: 3%;
     text-align: center;
 }
 
+
 .names {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: "Old Standard TT", serif;
     font-weight: 700;
     font-style: normal;
@@ -49,6 +50,7 @@ h2 {
     margin-inline-end: 1rem;
     margin-block-end: 2rem;
     margin-block-start: 0.5rem;
+    padding-block-start: 5%;
     
     em {
         color: #FF2424;
@@ -56,11 +58,13 @@ h2 {
 }
 
 
+
+
 /* APPLE STYLE BUTTONS (BLUE) AND (STROKE) */
 ol {
   text-align: center;
-  padding-block-start: 5%;
-  padding-block-end: 5%;
+  padding-block-start: 3%;
+  padding-block-end: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,10 +75,10 @@ ol {
 /* work on nesting */
 .buttons{
   margin-block-end: 3rem;
+
   .blue {
       background-color: #0171e3;
-  
-      padding-block: 3%;
+      padding-block: 0.4rem;
       /* from the class website; border radius*/
       border-radius: 1.2rem;
   }
@@ -83,18 +87,20 @@ ol {
       color: #0171e3;
       border-color: #0171e3;
       border-style: solid;
-      padding-block: 3%;
+      padding-block: 0.4rem;
       border-width: 0.1rem;
       border-radius: 1.2rem;
   }
 }
 
+
+
 li {
     /* block-size: 2rem; */
     /* padding: 3%; */
-    font-weight: 200;
-    font-size: 0.8rem;
-    width: 6rem;
+    font-weight: 300;
+    font-size: 0.7rem;
+    width: 5rem;
 }
 
 
@@ -135,7 +141,7 @@ p{
     /* margin-block-start: 2calc(2 * var(--spacing)); */
     /* padding-block: 8%; */
     line-height: 150%;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 5%;
 }
 
@@ -160,7 +166,7 @@ p{
         line-height: 90%;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2.8rem;
         padding-inline-start: 1rem;
         padding-block-start: 3rem;
         
@@ -178,7 +184,7 @@ p{
 
 .part3 {
     background-color: #FFFAE3;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 90%;
     font-weight: 700;
     text-transform: uppercase;
@@ -191,6 +197,7 @@ p{
     padding-inline-start: 1.5rem;
     padding-block: 1rem;
     margin-block-end: 3rem;
+    padding-inline-end: 1rem;
 
      em {
         color: #FF2424;
@@ -204,8 +211,6 @@ p{
 }
 
 
-/* add links to the bottom buttons */
-/* connect the part buttons + back to top */
 /* start media queries */
 /* sticky nav bar blur */
 
