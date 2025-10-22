@@ -22,9 +22,19 @@ h1{
     text-align: center;
     font-weight: 500;
     @media (width > 500px) {
-        font-size: 2rem;
-        padding: 2rem;
+        font-size: 1.6rem;
+        
     }
+     @media (width > 625px) {
+        font-size: 2rem;
+        
+    }
+     @media (width > 1270px) {
+        font-size: 2.6rem;
+        
+    }
+    
+
 }
 
 h2 {
@@ -33,6 +43,17 @@ h2 {
     padding-block-start: 1%;
     padding-block-end: 3%;
     text-align: center;
+     @media (width > 625px) {
+        font-size: 1.3rem;
+        padding-block-end: 2%;
+        
+    }
+     @media (width > 1270px) {
+        font-size: 1.7rem;
+        padding-block-end: 1%;
+        
+    }
+   
 }
 
 
@@ -55,6 +76,28 @@ h2 {
     em {
         color: #FF2424;
     }
+      @media (width > 500px) {
+        font-size: 2rem;
+        
+    }
+    @media (width > 625px) {
+        font-size: 2.2rem;
+        
+    }
+     @media (width > 675px) {
+        font-size: 2.6rem;
+        
+    }
+     @media (width > 776px) {
+        font-size: 2.8rem;
+        
+    }
+
+     @media (width > 1270px) {
+        font-size: 3.4rem;
+        padding-inline-end: 15rem;
+    }
+
 }
 
 
@@ -63,12 +106,12 @@ h2 {
 /* APPLE STYLE BUTTONS (BLUE) AND (STROKE) */
 ol {
   text-align: center;
-  padding-block-start: 3%;
-  padding-block-end: 3%;
+  padding-block: 3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+
 
 }
 
@@ -81,6 +124,12 @@ ol {
       padding-block: 0.4rem;
       /* from the class website; border radius*/
       border-radius: 1.2rem;
+      @media (width > 1270px) {
+        padding-block: 0.6rem;
+        border-radius: 1.6rem;
+       
+    }
+      
   }
   
   .stroke {
@@ -90,6 +139,11 @@ ol {
       padding-block: 0.4rem;
       border-width: 0.1rem;
       border-radius: 1.2rem;
+      @media (width > 1270px) {
+        padding-block: 0.6rem;
+        border-radius: 1.6rem;
+       
+    }
   }
 }
 
@@ -101,6 +155,24 @@ li {
     font-weight: 300;
     font-size: 0.7rem;
     width: 5rem;
+
+     @media (width > 1270px) {
+        font-size: 1rem;
+        
+    }
+    @media (width > 1270px) {
+        width: 6rem;
+       
+    }
+/* increase size of top bar text  + bottom bar */
+    /* .bar {
+        @media (width > 625px) {
+        font-size: 1rem;
+        
+    }
+
+    } */
+     
 }
 
 
@@ -116,7 +188,10 @@ li {
     top: 0;
     /* from MDN - blur */
     backdrop-filter: blur(1px); 
-  
+     font-weight: 300;
+    font-size: 0.7rem;
+
+
 }
 
 
@@ -143,6 +218,10 @@ p{
     line-height: 150%;
     font-size: 0.85rem;
     padding: 5%;
+     @media (width > 675px) {
+        font-size: 1rem;
+        
+    }
 }
 
 
@@ -169,6 +248,14 @@ p{
         font-size: 2.5rem;
         padding-inline-start: 1rem;
         padding-block-start: 3rem;
+         @media (width > 500px) {
+        font-size: 2.8rem;
+         @media (width > 625px) {
+        font-size: 3.2rem;
+        
+    }
+        
+    }
         
 
     }
@@ -201,6 +288,14 @@ p{
 
      em {
         color: #FF2424;
+    }
+      @media (width > 500px) {
+        font-size: 1.6rem;
+     @media (width > 625px) {
+        font-size: 2rem;
+        
+    }
+        
     }
 
 }
