@@ -90,8 +90,17 @@ h2 {
     }
      @media (width > 776px) {
         font-size: 2.8rem;
+        margin-inline-end: 2.5rem;
         
     }
+ @media (width > 827px) {
+        font-size: 3.2rem;
+        padding-inline-end: 20rem;
+        margin-inline-end: 3rem;
+       
+        
+    }
+
 
      @media (width > 1270px) {
         font-size: 3.4rem;
@@ -187,7 +196,7 @@ li {
     text-align: center;
     background-color: #181818;
     opacity: 50%;
-    padding-block: 5%;
+    padding-block: 1rem;
     position: sticky;
     top: 0;
     /* from MDN - blur */
@@ -210,12 +219,6 @@ li {
     border-radius: .3rem;
     margin: 5%;
     font-weight: 300;
-
-     @media (width > 1270px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
 }
 
 em {
@@ -248,12 +251,24 @@ p{
     line-height: 150%;
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
+    @media (width > 950px) {
+        padding-inline-start: 2.3rem;
+        }
     @media (width > 1270px) {
         margin-inline-end: 3.75rem;
+          display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'blockquote blockquote'
+        'bodycopy bodycopy';
+        
+
       p{
         /* display: flex; */
         font-size: 1.4rem;
-        padding-inline: 3.8rem;
+        padding-inline-start: 3.8rem;
+    
+      
 
       }      
     } 
@@ -270,9 +285,16 @@ p{
         font-size: 2.8rem;}
          @media (width > 625px) {
         font-size: 3.2rem;} 
+         @media (width > 1000px) {
+        font-size: 3.6rem;
+        padding-inline-start: 1.9rem; 
+        line-height: 100%;
+    } 
         @media (width > 1270px) {
         font-size: 4.2rem;  
-        padding-inline-start: 3.8rem;          
+        padding-inline-start: 3.8rem; 
+        grid-area: blockquote;   
+        padding-block: 4rem;      
         } 
     }  
     em {
@@ -312,7 +334,16 @@ p{
         font-size: 2rem;
         
     }
+     @media (width > 950px) {
+        padding-inline-end: 8rem;
+        padding-inline-start: 2.3rem;
         
+    }
+     @media (width > 1050px) {
+        padding-inline-end: 12rem;
+
+        
+    }
     }
     @media (width > 1270px) {
         margin-inline-end: 3.75rem;
@@ -328,6 +359,11 @@ p{
 
 #part3 {
     margin-block-start: 4rem;
+    @media (width > 1270px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 
@@ -335,6 +371,13 @@ p{
 /* sticky nav bar blur */
 
 
+#part1 {
+      @media (width > 1270px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
 
 
 @media (width > 375px){
