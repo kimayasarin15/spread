@@ -111,6 +111,10 @@ h2 {
         margin-inline-end: 3.75rem;
     }
 
+    @media (width > 1400px) {
+        font-size: 4rem;
+    }
+
 }
 
 
@@ -252,21 +256,21 @@ p{
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
     @media (width > 950px) {
-        padding-inline-start: 2.3rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 2rem;
         }
     @media (width > 1270px) {
-        margin-inline-end: 3.75rem;
-          display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+        /* margin-inline-end: 3.75rem; */
+          /* display: grid; */
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-areas: 
         'blockquote blockquote'
-        'bodycopy bodycopy';
+        'bodycopy bodycopy'; */
         
 
       p{
         /* display: flex; */
-        font-size: 1.4rem;
-        padding-inline-start: 3.8rem;
+        font-size: 1.2rem;
     
       
 
@@ -285,17 +289,29 @@ p{
         font-size: 2.8rem;}
          @media (width > 625px) {
         font-size: 3.2rem;} 
+        @media (width > 800px) {
+        padding-inline-start: 2rem; 
+        line-height: 100%;
+        font-size: 3.5rem;
+    }
          @media (width > 1000px) {
-        font-size: 3.6rem;
-        padding-inline-start: 1.9rem; 
+        font-size: 3.9rem;
+        padding-inline-start: 2rem; 
         line-height: 100%;
     } 
         @media (width > 1270px) {
-        font-size: 4.2rem;  
-        padding-inline-start: 3.8rem; 
+        font-size: 4.7rem;  
+        padding-inline-start: 2rem; 
         grid-area: blockquote;   
         padding-block: 4rem;      
         } 
+
+        @media (width > 1400px) {
+            padding-inline-end: 20rem;
+            font-size: 6rem;
+            padding-inline-start: 2.6rem;
+            
+        }
     }  
     em {
         color: #FF2424;}
@@ -349,20 +365,27 @@ p{
         margin-inline-end: 3.75rem;
         font-size: 3rem;
         padding-inline: 3.8rem;
-        padding-block: 2rem;
-
-           
+        padding-block: 2rem;     
     } 
+
+    @media (width > 1400px) {
+            padding-inline-end: 10rem;
+            font-size: 3.5rem;
+            /* padding-inline-start: 2.6rem; */
+            
+        }
 
 }
 
 
 #part3 {
     margin-block-start: 4rem;
+    margin-block-end: 2rem;
     @media (width > 1270px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-
+        /* grid-template-columns: 1fr 1fr; */
+        padding-inline-start: 1rem;
+        padding-inline-end: 10rem;
     }
 }
 
