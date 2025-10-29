@@ -33,6 +33,10 @@ h1{
         font-size: 2.6rem;
         
     }
+      @media print {
+        color: black;
+        padding-block: 0.05rem;
+    }
     
 
 }
@@ -52,6 +56,10 @@ h2 {
         font-size: 1.7rem;
         padding-block-end: 1%;
         
+    }
+    @media print {
+        color: black;
+        padding-block: 0.05rem;
     }
    
 }
@@ -124,6 +132,14 @@ h2 {
          padding-inline-end: 40rem;
     }
 
+      @media print {
+        color: black;
+
+        em {
+            color: #ffffff;
+        }
+    }
+
 }
 
 
@@ -137,7 +153,9 @@ ol {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
-
+  @media print {
+        visibility: hidden;
+    }
 
 }
 
@@ -218,11 +236,22 @@ li {
     font-size: 0.7rem;
     backdrop-filter: blur(50rem); 
     
-    
+      @media print {
+        visibility: hidden;
+    }
     
 }
 
+/*from MDN to target p wihtout affecting big letter */
+  @media print {
+       p:not(.bigletter) {
+        color: black;
 
+        em {
+            color: #ffffff;
+        }
+  }
+     }  
 
 
 
@@ -377,6 +406,14 @@ p{
             padding-inline-start: 2.6rem;
             
         }
+
+           @media print {
+        color: black;
+
+        em {
+            color: #ffffff;
+        }
+    }
     }  
     em {
         color: #FF2424;}
@@ -439,7 +476,14 @@ p{
             /* padding-inline-start: 2.6rem; */
             
         }
+          @media print {
+       color: black;
 
+        em {
+            color: #ffffff;
+        }
+
+}
 }
 
 
@@ -502,3 +546,8 @@ p{
     } */
 /* } */
 
+/* STILL TO DO
+finish print - spacing
+blur effect on nav 
+mobile grey background
+hover states */
