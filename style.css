@@ -213,13 +213,14 @@ li {
     position: sticky;
     top: 0;
     /* from MDN - blur */
-    backdrop-filter: blur(1px); 
-     font-weight: 300;
+    /* backdrop-filter: blur(1px);  */
+    font-weight: 300;
     font-size: 0.7rem;
-
-
+    backdrop-filter: blur(50rem); 
+    
+    
+    
 }
-
 
 
 
@@ -296,12 +297,44 @@ p{
       }      
     } 
 
-        @media (width > 1543px) {
+
+    @media (width > 800px) {
+        p{
+            padding-inline-start: 2rem; 
+            max-width: 65ch;
+        }
+}
+
+    @media (width > 1000px) {
+        p{
+            padding-inline-start: 2rem; 
+            max-width: 80ch;
+        }
+}
+
+@media (width > 1370px) {
+        p{
+            padding-inline-start: 3rem; 
+            max-width: 80ch;
+        }
+}
+
+@media (width > 1440px) {
+        p{
+            padding-inline-start: 3rem; 
+            max-width: 90ch;
+        }
+}
+
+
+     @media (width > 1543px) {
         font-size: 4.8rem;
          margin-inline-end: 4.2rem;
          padding-inline-end: 6rem;
 
 }
+
+
     
     .bigletter {
         line-height: 90%;
@@ -323,6 +356,7 @@ p{
         font-size: 3.9rem;
         padding-inline-start: 2rem; 
         line-height: 100%;
+        padding-inline-end: 10rem;
     } 
         @media (width > 1270px) {
         font-size: 4.7rem;  
@@ -331,8 +365,14 @@ p{
         padding-block: 4rem;      
         } 
 
+        @media (width > 1369px) {
+            padding-inline-end: 6rem;
+            font-size: 6rem;
+            padding-inline-start: 2.6rem;
+            
+        }
         @media (width > 1400px) {
-            padding-inline-end: 20rem;
+            padding-inline-end: 8rem;
             font-size: 6rem;
             padding-inline-start: 2.6rem;
             
@@ -401,6 +441,11 @@ p{
         }
 
 }
+
+
+
+
+
 
 
 #part3 {
