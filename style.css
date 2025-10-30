@@ -296,17 +296,16 @@ li {
 /* PARAGRAPHS */
 .apple {
     background-color: #282828;
-    border-radius: 0.3rem;
-    margin: 1rem;
-    font-weight: 300;
-/* need to fix so that the mobile version is full grey background */
-   @media (width < 675) {
     border-radius: 0rem;
     margin: 0;
+    font-weight: 300;
+
+   @media (width > 650px) {
+    border-radius: 0.5rem;
+    margin: 1rem;
    }
    @media print {
     background-color: white;
-    padding-inline-start: -0.5rem;
    }
 
 }
@@ -318,7 +317,7 @@ em {
 p{
     /* margin-block-start: 2calc(2 * var(--spacing)); */
     /* padding-block: 8%; */
-    line-height: 150%;
+    line-height: 160%;
     font-size: 0.85rem;
     padding: 1rem;
      @media (width > 675px) {
@@ -347,16 +346,20 @@ p{
     background-color: #E6E6E6;
     text-align: left;
     color: black;
-    margin-inline-end: 1rem;
+    /* margin-inline-end: 1rem; */
     line-height: 150%;
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
     padding-block-end: 3rem;
    
+    @media (width > 650px) {
+        margin-inline-end: 2rem;
+    }
     
     @media (width > 950px) {
         padding-inline-start: 1rem;
         padding-inline-end: 2rem;
+        margin-inline-end: 2rem;
         }
     @media print {
         background-color: white;
@@ -582,6 +585,11 @@ p{
 }
    @media (width > 900px) {
      margin: 4rem;   
+}
+
+@media (width > 1050px) {
+     margin: 6rem;  
+     margin-inline: 10rem; 
 }
     @media (width > 1270px) {
        margin-block: 6rem; 
