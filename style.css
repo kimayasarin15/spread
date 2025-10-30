@@ -363,7 +363,17 @@ p {
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
     padding-block-end: 3rem;
-   
+   p {
+    em {
+        background-color: #FF2424;
+        color: white;
+        padding: 0.1rem;
+        @media print {
+            background-color: white;
+            color: black;
+        }
+    }
+   }
     @media (width > 650px) {
         margin-inline-end: 2rem;
     }
@@ -376,6 +386,7 @@ p {
     @media print {
         background-color: white;
         padding-inline-start: 1.5rem;
+    
       }
 
     @media (width > 1270px) {
