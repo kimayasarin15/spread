@@ -31,22 +31,17 @@ h1{
     font-weight: 500;
     @media (width > 500px) {
         font-size: 1.6rem;
-        
     }
      @media (width > 625px) {
-        font-size: 2rem;
-        
+        font-size: 2rem;  
     }
      @media (width > 1270px) {
-        font-size: 2.6rem;
-        
+        font-size: 2.6rem;  
     }
     @media print {
         color: black;
         padding-block-start: 3rem;
     }
-    
-
 }
 
 h2 {
@@ -57,18 +52,15 @@ h2 {
     text-align: center;
      @media (width > 625px) {
         font-size: 1.3rem;
-        padding-block-end: 2%;
-        
+        padding-block-end: 2%; 
     }
      @media (width > 1270px) {
         font-size: 1.7rem;
-        padding-block-end: 1%;
-        
+        padding-block-end: 1%; 
     }
     @media print {
         color: black;
     }
-   
 }
 
 
@@ -95,7 +87,6 @@ h2 {
       @media (width > 449px) {
         font-size: 2.6rem;
         padding-inline-end: 15rem;
-        
     }
     @media (width > 625px) {
         font-size: 2.8rem;
@@ -103,20 +94,16 @@ h2 {
     }
      @media (width > 675px) {
         font-size: 3.2rem;
-        padding-inline-end: 15rem;
-        
+        padding-inline-end: 15rem; 
     }
      @media (width > 776px) {
         font-size: 3.4rem;
-        margin-inline-end: 2.5rem;
-        
+        margin-inline-end: 2.5rem;  
     }
  @media (width > 827px) {
         font-size: 3.8rem;
         padding-inline-end: 25rem;
-        margin-inline-end: 3rem;
-       
-        
+        margin-inline-end: 3rem; 
     }
 
 
@@ -150,6 +137,12 @@ h2 {
     }
 }
 
+/* .blur {
+    opacity: 10%;
+    margin: 0;
+    padding: 0;
+    filter: drop-shadow(5px 5px);
+} */
 
 
 
@@ -203,9 +196,7 @@ ol {
       @media (width > 1270px) {
         padding-block: 0.6rem;
         border-radius: 1.6rem;
-       
     }
-      
   }
   
   .stroke {
@@ -218,7 +209,6 @@ ol {
       @media (width > 1270px) {
         padding-block: 0.6rem;
         border-radius: 1.6rem;
-       
     }
   }
 }
@@ -234,21 +224,10 @@ li {
 
      @media (width > 1270px) {
         font-size: 1rem;
-        
     }
     @media (width > 1270px) {
         width: 6rem;
-       
     }
-/* increase size of top bar text  + bottom bar */
-    /* .bar {
-        @media (width > 625px) {
-        font-size: 1rem;
-        
-    }
-
-    } */
-     
 }
 
 
@@ -282,7 +261,6 @@ li {
     p:hover {
         color: #0171E3; 
     }
-    
 }
 
 /*from MDN to target p wihtout affecting big letter */
@@ -296,7 +274,7 @@ li {
 
 
 
-/* PARAGRAPHS */
+/**************** PARAGRAPHS / PART 1 ***************/
 .apple {
     background-color: #282828;
     border-radius: 0rem;
@@ -309,16 +287,14 @@ li {
    }
    @media print {
     background-color: white;
-
    }
-
 }
 
 em {
     color: #0171e3;
 }
 
-p{
+p {
     /* margin-block-start: 2calc(2 * var(--spacing)); */
     /* padding-block: 8%; */
     line-height: 160%;
@@ -340,7 +316,33 @@ p{
   }
      }  
 
-/* part 2 */
+#part1 {
+           @media (width > 650px) {
+          margin: 2rem;   
+     }
+        @media (width > 900px) {
+          margin: 4rem;   
+     }
+     
+     @media (width > 1050px) {
+          margin: 6rem;  
+          margin-inline: 10rem; 
+     }
+         @media (width > 1270px) {
+            margin-block: 6rem; 
+            margin-inline: 15rem;
+         }
+     
+         @media (width > 1400px) {
+            margin-block: 8rem; 
+            margin-inline: 20rem;
+     }
+     
+     }
+
+
+
+/***************** part 2 *****************/
 .part2 {
     background-color: #FFFAE3;
     font-size: 2rem;
@@ -371,23 +373,13 @@ p{
       }
 
     @media (width > 1270px) {
-        margin-inline-end: 3.75rem;
-        /* margin-inline-end: 3.75rem; */
-          /* display: grid; */
-        /* grid-template-columns: 1fr 1fr; */
-        /* grid-template-areas: 
-        'blockquote blockquote'
-        'bodycopy bodycopy'; */
-      
-
+        margin-inline-end: 3.75rem;      
       p{
         /* display: flex; */
         font-size: 1.2rem;
         @media (width > 1543) {
             /* padding-inline-start: 30%; */
         }
-      
-
       }      
     } 
 
@@ -425,7 +417,6 @@ p{
         font-size: 4.8rem;
          margin-inline-end: 4.2rem;
          padding-inline-end: 6rem;
-
 }
 
 
@@ -445,33 +436,29 @@ p{
         padding-inline-start: 2rem; 
         line-height: 100%;
         font-size: 3.5rem;
-    }
+        }
          @media (width > 1000px) {
         font-size: 3.9rem;
         padding-inline-start: 2rem; 
         line-height: 100%;
         padding-inline-end: 10rem;
-    } 
+        } 
         @media (width > 1270px) {
         font-size: 4.7rem;  
         padding-inline-start: 2rem; 
         grid-area: blockquote;   
         padding-block: 4rem;      
         } 
-
         @media (width > 1369px) {
             padding-inline-end: 6rem;
             font-size: 6rem;
-            padding-inline-start: 2.6rem;
-            
+            padding-inline-start: 2.6rem;  
         }
         @media (width > 1400px) {
             padding-inline-end: 8rem;
             font-size: 6rem;
-            padding-inline-start: 2.6rem;
-            
+            padding-inline-start: 2.6rem;  
         }
-
               @media print {
         color: black;
         background-color: white;
@@ -483,15 +470,12 @@ p{
     }  
     em {
         color: #FF2424;}
-
-
 } 
 
 
 
 
-/* part 3 */
-
+/****************** part 3 ********************/
 .part3 {
     background-color: #FFFAE3;
     font-size: 1.4rem;
@@ -508,7 +492,6 @@ p{
     padding-block: 1rem;
     margin-block-end: 3rem;
     padding-inline-end: 1rem;
-    
 
      em {
         color: #FF2424;
@@ -526,8 +509,6 @@ p{
     }
      @media (width > 1050px) {
         padding-inline-end: 12rem;
-
-        
     }
     }
     @media (width > 1270px) {
@@ -551,12 +532,8 @@ p{
         em {
             color: #818181;
         }
-
 }
 }
-
-
-
 
 
 
@@ -584,37 +561,17 @@ p{
        margin-inline: 20rem;
 }
 
-}
-
-
-
-/* start media queries */
-/* sticky nav bar blur */
-
-
-#part1 {
-      @media (width > 650px) {
-     margin: 2rem;   
-}
-   @media (width > 900px) {
-     margin: 4rem;   
-}
-
-@media (width > 1050px) {
-     margin: 6rem;  
-     margin-inline: 10rem; 
-}
-    @media (width > 1270px) {
-       margin-block: 6rem; 
-       margin-inline: 15rem;
-    }
-
-    @media (width > 1400px) {
-       margin-block: 8rem; 
-       margin-inline: 20rem;
+@media print {
+    margin-inline: 0.4rem;
+    /* margin-inline-end: 1rem; */
 }
 
 }
+
+
+
+
+
 
 
 
