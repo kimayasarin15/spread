@@ -65,7 +65,7 @@ h2 {
 
 
 .names {
-    font-size: 1.75rem;
+    font-size: 2.2rem;
     font-family: "Old Standard TT", serif;
     font-weight: 700;
     font-style: normal;
@@ -76,7 +76,6 @@ h2 {
     text-align: left;
     color: black;
     line-height: 90%;
-    margin-inline-end: 2rem;
     margin-block-end: 2rem;
     margin-block-start: 4.5rem;
     padding-block-start: 1rem;
@@ -84,13 +83,14 @@ h2 {
     em {
         color: #FF2424;
     }
-      @media (width > 449px) {
-        font-size: 2.6rem;
+    @media (width > 449px) {
+        font-size: 2.7rem;
         padding-inline-end: 15rem;
     }
-    @media (width > 625px) {
+    @media (width > 650px) {
         font-size: 2.8rem;
         padding-inline-end: 15rem;
+        margin-inline-end: 2rem;
     }
      @media (width > 675px) {
         font-size: 3.2rem;
@@ -141,8 +141,13 @@ h2 {
     opacity: 10%;
     margin: 0;
     padding: 0;
-    filter: drop-shadow(5px 5px);
-} */
+    /* filter: drop-shadow(5px 5px); */
+    /* position: absolute;
+    top: 135px;
+    left: 0px;
+    padding-inline-end: 50rem;
+    background: none;
+/* } */ 
 
 
 
@@ -487,19 +492,19 @@ p {
     background-color: #E6E6E6;
     text-align: left;
     color: black;
-    margin-inline-end: 2rem;
     padding-inline-start: 1.5rem;
     padding-block: 1rem;
     margin-block-end: 3rem;
     padding-inline-end: 1rem;
-
-     em {
+    
+    em {
         color: #FF2424;
     }
-      @media (width > 500px) {
+    @media (width > 500px) {
         font-size: 1.6rem;
-     @media (width > 625px) {
-        font-size: 2rem;
+        @media (width > 650px) {
+            font-size: 2.2rem;
+            margin-inline-end: 2rem;
         
     }
      @media (width > 950px) {
