@@ -8,6 +8,7 @@
     color: white;
     font-size: 115%;
     font-family: "Noto Sans", sans-serif;
+    scroll-padding-top: 90px;
 }
 
 @media print {
@@ -165,11 +166,32 @@ ol {
         visibility: hidden;
     }
 
+    @media (width > 750px) {
+        ol{
+            padding-block: 1rem;
+        }
+    }
+
+    @media (width > 850px) {
+            padding-block: 1rem;
+    }
+     @media (width > 1000px) {
+            padding-block: 1rem;
+    }
+
+    @media (width > 1200px) {
+            padding-block: 1.5rem;
+    }
+
 }
 
 /* work on nesting */
 .buttons{
   margin-block-end: 3rem;
+  li:hover {
+        background-color: #1388FE;
+        color: #ffffff;
+        }
 
   .blue {
       background-color: #0171e3;
@@ -233,19 +255,29 @@ li {
 /* NAVIGATION AND BOTTOM FOLIO */
 .bar {
     text-align: center;
-    background-color: #181818;
-    opacity: 50%;
+    background-color: color-mix(in srgb, #181818, transparent 70%); ;
     padding-block: 0.1rem;
     position: sticky;
     top: 0;
-    /* from MDN - blur */
-    /* backdrop-filter: blur(1px);  */
     font-weight: 300;
     font-size: 0.7rem;
-    backdrop-filter: blur(50rem); 
+    backdrop-filter: blur(2.5rem); 
+     
     
       @media print {
         visibility: hidden;
+    }
+
+     @media (width > 645px) {
+            padding-block: 0.1rem;
+    }
+    
+    li:hover {
+        color: #0171E3;
+    }
+
+    p:hover {
+        color: #0171E3; 
     }
     
 }
@@ -573,6 +605,4 @@ p{
 
 /* STILL TO DO
 finish print - spacing
-blur effect on nav 
 mobile grey background
-hover states */
