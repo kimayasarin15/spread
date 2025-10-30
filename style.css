@@ -148,8 +148,8 @@ h2 {
             color: #818181;
         }
     }
-
 }
+
 
 
 
@@ -508,6 +508,7 @@ p{
     padding-block: 1rem;
     margin-block-end: 3rem;
     padding-inline-end: 1rem;
+    
 
      em {
         color: #FF2424;
