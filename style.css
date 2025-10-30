@@ -10,7 +10,14 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-
+@media print {
+    html,body {
+        background-color: white;
+    }
+    p em {
+        font-style: italic;
+    }
+}
 
 
 
@@ -33,7 +40,7 @@ h1{
         font-size: 2.6rem;
         
     }
-      @media print {
+    @media print {
         color: black;
         padding-block: 0.05rem;
     }
@@ -132,11 +139,12 @@ h2 {
          padding-inline-end: 40rem;
     }
 
-      @media print {
+       @media print {
         color: black;
+        background-color: white;
 
         em {
-            color: #ffffff;
+            color: #818181;
         }
     }
 
@@ -246,10 +254,7 @@ li {
   @media print {
        p:not(.bigletter) {
         color: black;
-
-        em {
-            color: #ffffff;
-        }
+        background-color: white;
   }
      }  
 
@@ -266,6 +271,10 @@ li {
    @media (width < 675) {
     border-radius: 0rem;
     margin: 0;
+   }
+   @media print {
+    background-color: white;
+    padding-inline-start: -0.5rem;
    }
 
 }
@@ -285,6 +294,16 @@ p{
         }
 }
 
+/*from MDN to target p wihtout affecting big letter */
+  @media print {
+       p:not(.bigletter) {
+        color: black;
+        background-color: white;
+        em {
+            color: black;
+        }
+  }
+     }  
 
 /* part 2 */
 .part2 {
@@ -301,10 +320,17 @@ p{
     padding-inline-start: 0.5rem;
     margin-block-start: 4rem;
     padding-block-end: 3rem;
+   
+    
     @media (width > 950px) {
         padding-inline-start: 1rem;
         padding-inline-end: 2rem;
         }
+    @media print {
+        background-color: white;
+        padding-inline-start: 1.5rem;
+      }
+
     @media (width > 1270px) {
         margin-inline-end: 3.75rem;
         /* margin-inline-end: 3.75rem; */
@@ -313,7 +339,7 @@ p{
         /* grid-template-areas: 
         'blockquote blockquote'
         'bodycopy bodycopy'; */
-        
+      
 
       p{
         /* display: flex; */
@@ -407,11 +433,12 @@ p{
             
         }
 
-           @media print {
+              @media print {
         color: black;
+        background-color: white;
 
         em {
-            color: #ffffff;
+            color: #818181;
         }
     }
     }  
@@ -476,11 +503,12 @@ p{
             /* padding-inline-start: 2.6rem; */
             
         }
-          @media print {
-       color: black;
+         @media print {
+        color: black;
+        background-color: white;
 
         em {
-            color: #ffffff;
+            color: #818181;
         }
 
 }
@@ -499,20 +527,17 @@ p{
      margin: 2rem;   
 }
      @media (width > 900px) {
-     margin: 4rem;   
+     margin: 3rem;   
 }
     @media (width > 1270px) {
-       margin-block: 6rem; 
-       margin-inline: 15rem;
-       
+       margin: 5rem; 
     }
      @media (width > 1400px) {
-       margin-block: 8rem; 
-       margin-inline: 20rem; 
+       margin: 6rem; 
 }
 
-
 }
+
 
 
 /* start media queries */
