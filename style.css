@@ -12,12 +12,16 @@
 }
 
 @media print {
-    body {
-        background-color: white;
+    html,body {
+        /* important from MDN to override the black bars */
+        background-color: white !important;
     }
     p em {
         font-style: italic;
     }
+    a {
+       text-decoration: none !important;
+   }
 }
 
 
@@ -296,6 +300,7 @@ li {
    a {
        text-decoration: underline;
    }
+
 }
 
 
@@ -573,6 +578,7 @@ p {
 
 @media print {
     margin-inline: 0.4rem;
+    margin-block: 0.2rem;
     /* margin-inline-end: 1rem; */
 }
 
