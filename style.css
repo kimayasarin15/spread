@@ -476,18 +476,31 @@ p {
             font-size: 6rem;
             padding-inline-start: 2.6rem;  
         }
-              @media print {
-        color: black;
-        background-color: white;
-
+        @media print {
+            color: black;
+            background-color: white;
         em {
             color: #818181;
         }
-    }
-    }  
-    em {
-        color: #FF2424;}
+        }
+
+ 
+        em {
+            color: #ff2424;
+            }
+  
+        
+
+
+
+
+
+
+
 } 
+}
+
+
 
 
 
