@@ -13,19 +13,28 @@
 
 @media print {
     html,body {
-        /* important from MDN to override the black bars */
-        background-color: white !important;
+        background-color: white;
+    }
+    :root {
+        background-color: white;
     }
     p em {
         font-style: italic;
     }
     a {
        text-decoration: none !important;
-   }
+   }  
+   /*from MDN to target p wihtout affecting big letter */
+    p:not(.bigletter) {
+        color: black;
+        background-color: white;
+        em {
+            color: black;
+        }
+  }
 }
 
-
-
+ 
 /* HEADER */
 h1{
     font-size: 1.4rem;
@@ -104,7 +113,7 @@ h2 {
         font-size: 3.4rem;
         margin-inline-end: 2.5rem;  
     }
- @media (width > 827px) {
+     @media (width > 827px) {
         font-size: 3.8rem;
         padding-inline-end: 25rem;
         margin-inline-end: 3rem; 
@@ -124,13 +133,13 @@ h2 {
         font-size: 4.4rem;
     }
 
-  @media (width > 1543px) {
+    @media (width > 1543px) {
         font-size: 4.8rem;
          margin-inline-end: 4.2rem;
          padding-inline-end: 40rem;
     }
 
-       @media print {
+    @media print {
         color: black;
         background-color: white;
         padding-inline-start: 3rem;
@@ -141,6 +150,7 @@ h2 {
     }
 }
 
+/* We tried to add an affect to our black&red text moments but it was breaking when trying to be responsive */
 /* .blur {
     opacity: 10%;
     margin: 0;
@@ -166,7 +176,7 @@ ol {
   gap: 1rem;
   @media print {
         visibility: hidden;
-        /* from MDN to override nav bar */
+        /* from MDN to override nav bar in print */
          display: none !important;
     }
 
@@ -179,7 +189,7 @@ ol {
     @media (width > 850px) {
             padding-block: 1rem;
     }
-     @media (width > 1000px) {
+    @media (width > 1000px) {
             padding-block: 1rem;
     }
 
@@ -231,7 +241,7 @@ li {
     font-size: 0.7rem;
     width: 5rem;
 
-     @media (width > 1270px) {
+    @media (width > 1270px) {
         font-size: 1rem;
     }
     @media (width > 1270px) {
@@ -253,8 +263,7 @@ li {
     font-size: 0.7rem;
     backdrop-filter: blur(2.5rem); 
      
-    
-      @media print {
+    @media print {
         visibility: hidden;
         display: none !important;
     }
@@ -271,14 +280,6 @@ li {
         color: #0171E3; 
     }
 }
-
-/*from MDN to target p wihtout affecting big letter */
-  @media print {
-       p:not(.bigletter) {
-        color: black;
-        background-color: white;
-  }
-     }  
 
 
 
@@ -320,35 +321,25 @@ p {
         }
 }
 
-/*from MDN to target p wihtout affecting big letter */
-  @media print {
-       p:not(.bigletter) {
-        color: black;
-        background-color: white;
-        em {
-            color: black;
-        }
-  }
-     }  
 
 #part1 {
-           @media (width > 650px) {
+        @media (width > 650px) {
           margin: 2rem;   
      }
         @media (width > 900px) {
           margin: 4rem;   
      }
      
-     @media (width > 1050px) {
+        @media (width > 1050px) {
           margin: 6rem;  
           margin-inline: 10rem; 
      }
-         @media (width > 1270px) {
+        @media (width > 1270px) {
             margin-block: 6rem; 
             margin-inline: 15rem;
          }
      
-         @media (width > 1400px) {
+        @media (width > 1400px) {
             margin-block: 8rem; 
             margin-inline: 20rem;
      }
@@ -413,14 +404,14 @@ p {
         }
 }
 
-@media (width > 1370px) {
+    @media (width > 1370px) {
         p{
             padding-inline-start: 3rem; 
             max-width: 80ch;
         }
 }
 
-@media (width > 1440px) {
+    @media (width > 1440px) {
         p{
             padding-inline-start: 3rem; 
             max-width: 90ch;
@@ -445,14 +436,14 @@ p {
         padding-block-start: 3rem;
          @media (width > 500px) {
         font-size: 2.8rem;}
-         @media (width > 625px) {
+        @media (width > 625px) {
         font-size: 3.2rem;} 
         @media (width > 800px) {
         padding-inline-start: 2rem; 
         line-height: 100%;
         font-size: 3.5rem;
         }
-         @media (width > 1000px) {
+        @media (width > 1000px) {
         font-size: 3.9rem;
         padding-inline-start: 2rem; 
         line-height: 100%;
@@ -512,17 +503,17 @@ p {
     }
     @media (width > 500px) {
         font-size: 1.6rem;
-        @media (width > 650px) {
+    @media (width > 650px) {
             font-size: 2.2rem;
             margin-inline-end: 2rem;
         
     }
-     @media (width > 950px) {
+    @media (width > 950px) {
         padding-inline-end: 8rem;
         padding-inline-start: 2.3rem;
         
     }
-     @media (width > 1050px) {
+    @media (width > 1050px) {
         padding-inline-end: 12rem;
     }
     }
@@ -539,7 +530,7 @@ p {
             /* padding-inline-start: 2.6rem; */
             
         }
-         @media print {
+    @media print {
         color: black;
         background-color: white;
         padding-inline-start: 2rem;
@@ -556,7 +547,7 @@ p {
 #part3 {
     margin-block-start: 4rem;
     margin-block-end: 2rem;
-       @media (width > 650px) {
+    @media (width > 650px) {
      margin: 2rem;   
 }
      @media (width > 900px) {
@@ -576,7 +567,7 @@ p {
        margin-inline: 20rem;
 }
 
-@media print {
+    @media print {
     margin-inline: 0.4rem;
     margin-block: 0.2rem;
     /* margin-inline-end: 1rem; */
