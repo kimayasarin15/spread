@@ -9,6 +9,10 @@
     font-size: 115%;
     font-family: "Noto Sans", sans-serif;
     scroll-padding-top: 90px;
+    /* added in variables for colour */
+    --red: #FF2424;
+    --blue: #0171E3;
+    --greybackground: #E6E6E6;
 }
 
 @media print {
@@ -24,14 +28,14 @@
     a {
        text-decoration: none !important;
    }  
-   /*from MDN to target p wihtout affecting big letter */
+   /*from MDN to target p wihtout affecting big letter not: psuedo classes */
     p:not(.bigletter) {
         color: black;
         background-color: white;
         em {
             color: black;
         }
-  }
+    }
 }
 
  
@@ -84,8 +88,7 @@ h2 {
     font-style: normal;
     text-transform: uppercase;
     padding-inline: 2rem;
-    /* background-color: #FFFAE3; */
-    background-color: #E6E6E6;
+    background-color: var(--greybackground);
     text-align: left;
     color: black;
     line-height: 90%;
@@ -94,7 +97,7 @@ h2 {
     padding-block-start: 1rem;
     
     em {
-        color: #FF2424;
+        color: var(--red);
     }
     @media (width > 449px) {
         font-size: 2.7rem;
@@ -176,7 +179,7 @@ ol {
   gap: 1rem;
   @media print {
         visibility: hidden;
-        /* from MDN to override nav bar in print */
+        /* from MDN to override nav bar in print using !imporant - we used this throughout for our print styles */
          display: none !important;
     }
 
@@ -208,9 +211,9 @@ ol {
         }
 
   .blue {
-      background-color: #0171e3;
+      background-color: var(--blue);
       padding-block: 0.4rem;
-      /* from the class website; border radius*/
+      /* from the class website; adding a border radius to bg*/
       border-radius: 1.2rem;
       @media (width > 1270px) {
         padding-block: 0.6rem;
@@ -219,8 +222,8 @@ ol {
   }
   
   .stroke {
-      color: #0171e3;
-      border-color: #0171e3;
+      color: var(--blue);
+      border-color: var(--blue);
       border-style: solid;
       padding-block: 0.4rem;
       border-width: 0.1rem;
@@ -273,11 +276,11 @@ li {
     }
     
     li:hover {
-        color: #0171E3;
+        color: var(--blue);
     }
 
     p:hover {
-        color: #0171E3; 
+        color: var(--blue);
     }
 }
 
@@ -307,7 +310,7 @@ li {
 
 
 em {
-    color: #0171e3;
+    color: var(--blue);
 }
 
 p {
@@ -355,7 +358,7 @@ p {
     font-weight: 400;
     font-family: "Old Standard TT", serif;
     font-style: normal;
-    background-color: #E6E6E6;
+    background-color: var(--greybackground);
     text-align: left;
     color: black;
     /* margin-inline-end: 1rem; */
@@ -365,10 +368,10 @@ p {
     padding-block-end: 3rem;
    p {
     em {
-        background-color: #FF2424;
+        background-color: var(--red);
         color: white;
         padding: 0.1rem;
-        @media print {
+    @media print {
             background-color: white;
             color: black;
         }
@@ -392,7 +395,7 @@ p {
     @media (width > 1270px) {
         margin-inline-end: 3.75rem;      
       p{
-        /* display: flex; */
+        /* display: flex; we decided againt having side by side paragraphs */
         font-size: 1.2rem;
         @media (width > 1543) {
             /* padding-inline-start: 30%; */
@@ -480,22 +483,12 @@ p {
             color: black;
             background-color: white;
         em {
-            color: #818181;
-        }
-        }
-
- 
-        em {
-            color: #ff2424;
+            color: #818181 !important;
             }
-  
-        
-
-
-
-
-
-
+        }
+    em {
+            color: var(--red);
+            }
 
 } 
 }
@@ -507,14 +500,13 @@ p {
 
 /****************** part 3 ********************/
 .part3 {
-    background-color: #FFFAE3;
     font-size: 1.4rem;
     line-height: 90%;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Old Standard TT", serif;
     font-style: normal;
-    background-color: #E6E6E6;
+    background-color: var(--greybackground);
     text-align: left;
     color: black;
     padding-inline-start: 1.5rem;
@@ -523,7 +515,7 @@ p {
     padding-inline-end: 1rem;
     
     em {
-        color: #FF2424;
+        color: var(--red);
     }
     @media (width > 500px) {
         font-size: 1.6rem;
@@ -614,5 +606,4 @@ p {
 
 
 
-/******************* STILL TO DO
-finish print (boxes, alignment)
+
