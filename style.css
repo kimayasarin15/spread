@@ -261,7 +261,7 @@ li {
     top: 0;
     font-weight: 300;
     font-size: 0.7rem;
-    backdrop-filter: blur(2.5rem); 
+    backdrop-filter: blur(1.5rem); 
      
     @media print {
         visibility: hidden;
